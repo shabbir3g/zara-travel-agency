@@ -11,6 +11,7 @@ const MyOrders = () => {
 
     const { user, isLoading } = useAuth();
     const [orders, setOrders] = useState([]);
+    console.log(orders);
 
     useEffect(() => {
         fetch(`http://localhost:5000/my-orders?email=${user.email}`)

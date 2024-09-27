@@ -23,7 +23,7 @@ const Service = () => {
         </div>
         <Row xs={1} md={3} className="g-4">
           {service.map((service, index) => (
-            <Col>
+            <Col key={service._id}>
               <Card className="box text-center">
                 <Card.Img
                   className="services-img"
